@@ -1,0 +1,22 @@
+.tag {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f9f9f9;
+    border: 1px solid #dfe3e6;
+    border-radius: 5px;
+    padding: 5px 12px; /* slightly bigger padding for better click area */
+    margin-right: 8px; /* slightly smaller margin for consistency */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out; /* smooth hover effect */
+}
+
+.tag:hover {
+    background-color: #e0e0e0; /* subtle hover color */
+    border-color: #c0c0c0;     /* change border on hover */
+    transform: translateY(-2px); /* small lift effect */
+}
+
+.tag:active {
+    transform: translateY(0); /* reset on click */
+    background-color: #d9d9d9; 
+}

@@ -1,0 +1,160 @@
+.app_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 16px;
+}
+
+/* FORM WIDTH */
+.app_header > form {
+  width: 40%;
+}
+
+/* INPUT */
+.task_input {
+  font-size: 18px;
+  font-weight: 400;
+  background: #f9f9f9;
+  color: #000;
+  border: 1px solid #dfe3e6;
+  border-radius: 5px;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.task_input::placeholder {
+  color: #686868;
+}
+
+/* BOTTOM LINE */
+.task_form_bottom_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* DROPDOWN */
+.task_status {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #999;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  padding: 0 5px;
+}
+
+/* BUTTON */
+.task_submit {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #6457f9;
+  color: #fff;
+  height: 40px;
+  padding: 0 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE FIX */
+/* ========================= */
+@media (max-width: 768px) {
+  .app_header > form {
+    width: 100%;
+  }
+
+  .task_form_bottom_line {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .task_status,
+  .task_submit {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .task_submit {
+    margin-top: 10px;
+  }
+}
+
+
+/* ========================= */
+/* 📱 TABLET VIEW */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app_header > form {
+    width: 70%;
+  }
+
+  .task_input {
+    font-size: 18px;
+  }
+}
+
+
+/* ========================= */
+/* 💻 LAPTOP VIEW */
+/* ========================= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .app_header > form {
+    width: 50%; /* Adjusted to look good on laptop screens */
+  }
+
+  .task_input {
+    font-size: 18px; /* Keep it consistent */
+    padding: 12px 14px; /* Slightly more padding for bigger screens */
+  }
+
+  .task_form_bottom_line {
+    gap: 15px; /* More spacing between dropdown and button */
+  }
+
+  .task_status {
+    width: 130px; /* Slightly bigger dropdown */
+    height: 42px;
+  }
+
+  .task_submit {
+    height: 42px;
+    padding: 0 18px;
+  }
+}
+
+
+
+/* ========================= */
+/* 🖥️ DESKTOP VIEW (1441px+) */
+/* ========================= */
+@media (min-width: 1441px) {
+  .app_header > form {
+    width: 40%; /* slightly wider form area on large screens */
+  }
+
+  .task_input {
+    font-size: 20px;   /* bigger input text */
+    padding: 14px 16px;
+  }
+
+  .task_form_bottom_line {
+    gap: 18px;        /* more spacing between dropdown and button */
+  }
+
+  .task_status {
+    width: 140px;      /* bigger dropdown */
+    height: 44px;
+  }
+
+  .task_submit {
+    height: 44px;      /* taller button */
+    padding: 0 20px;
+  }
+}

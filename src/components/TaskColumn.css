@@ -1,0 +1,83 @@
+.task_column {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* HEADER */
+.task_column_headimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.task_column_icon {
+  width: 26px;
+  margin-right: 6px;
+}
+
+/* ========================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ========================= */
+@media (max-width: 768px) {
+  .task_column {
+    padding: 14px;
+  }
+
+  .task_column_headimg {
+    font-size: 18px;
+  }
+}
+
+
+/* ========================= */
+/* 📱 TABLET VIEW */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .task_column {
+    padding: 16px;
+  }
+
+  .task_column_headimg {
+    font-size: 19px;
+  }
+}
+
+
+/* ========================= */
+/* 💻 LAPTOP VIEW */
+/* ========================= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .task_column {
+    padding: 18px; /* Slightly more padding for laptop */
+  }
+
+  .task_column_headimg {
+    font-size: 20px; /* Slightly bigger text */
+  }
+
+  .task_column_icon {
+    width: 28px; /* Slightly larger icon */
+    margin-right: 8px;
+  }
+}
+
+
+/* ========================= */
+/* 🖥️ DESKTOP VIEW (1441px+) */
+/* ========================= */
+@media (min-width: 1441px) {
+  .task_column {
+    padding: 20px; /* more padding for large screens */
+  }
+
+  .task_column_headimg {
+    font-size: 22px; /* bigger header text */
+  }
+
+  .task_column_icon {
+    width: 30px; /* larger icon */
+    margin-right: 10px;
+  }
+}

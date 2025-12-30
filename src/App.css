@@ -1,0 +1,79 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+/* MAIN COLUMNS */
+.app_main {
+  display: flex;
+  gap: 20px;
+  padding: 20px 8%;
+}
+
+/* EACH COLUMN */
+.task_column {
+  flex: 1;
+  margin: 0;
+}
+
+/* ========================= */
+/* 📱 MOBILE RESPONSIVE FIX */
+/* ========================= */
+@media (max-width: 768px) {
+  .app_main {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .task_column {
+    width: 100%;
+  }
+}
+
+
+/* ========================= */
+/* 📱 TABLET VIEW (769–1024) */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .app_main {
+    padding: 20px 4%;
+    gap: 16px;
+  }
+
+  .task_column {
+    flex: 1;
+  }
+}
+
+
+/* ========================= */
+/* 💻 LAPTOP VIEW (1025–1440px) */
+/* ========================= */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .app_main {
+    padding: 20px 8%; /* Keep it balanced */
+    gap: 20px;        /* Slightly bigger gap between columns */
+  }
+
+  .task_column {
+    flex: 1;
+    max-width: 32%;  /* Prevent columns from stretching too wide */
+  }
+}
+
+
+/* ========================= */
+/* 🖥️ DESKTOP VIEW (1441px+) */
+/* ========================= */
+@media (min-width: 1441px) {
+  .app_main {
+    padding: 30px 12%; /* more spacing on large screens */
+    gap: 24px;         /* wider gap between columns */
+  }
+
+  .task_column {
+    flex: 1;
+    max-width: 30%;    /* keeps columns proportional on big screens */
+  }
+}
